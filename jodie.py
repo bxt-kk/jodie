@@ -127,7 +127,7 @@ for ep in range(args.epochs):
     tbatch_full = False
 
     # TRAIN TILL THE END OF TRAINING INTERACTION IDX
-    print('total interactions:', len(train_end_idx))
+    print('total interactions:', train_end_idx)
     for j in range(train_end_idx):
         if (j + 1) % 1000 == 0:
             print('Processed %dth interactions' % j)
