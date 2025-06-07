@@ -171,7 +171,7 @@ for ep in range(args.epochs):
                 lib.current_tbatches_previous_item = cached_tbatches_previous_item[timestamp]
 
 
-            for i in range(lib.current_tbatches_user):
+            for i in range(len(lib.current_tbatches_user)):
                 if (i + 1) % 100 == 0:
                     print('Processed %d of %d T-batches ' % (i, len(lib.current_tbatches_user)))
                 
