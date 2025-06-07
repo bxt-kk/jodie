@@ -128,7 +128,7 @@ for ep in range(args.epochs):
 
     # TRAIN TILL THE END OF TRAINING INTERACTION IDX
     for j in range(train_end_idx):
-        if (j + 1) % 100 == 0:
+        if (j + 1) % 1000 == 0:
             print('Processed %dth interactions' % j)
 
         if is_first_epoch:
@@ -172,7 +172,7 @@ for ep in range(args.epochs):
 
 
             for i in range(len(lib.current_tbatches_user)):
-                if (i + 1) % 100 == 0:
+                if (i + 1) % 500 == 0:
                     print('Processed %d of %d T-batches ' % (i, len(lib.current_tbatches_user)))
                 
                 total_interaction_count += len(lib.current_tbatches_interactionids[i])
